@@ -1,5 +1,5 @@
+import logo from "./assets/logo.png"
 import { useState } from "react"
-
 function App() {
 
   const [carrito, setCarrito] = useState(0)
@@ -12,11 +12,21 @@ function App() {
     <div className="min-h-screen bg-gradient-to-b from-zinc-100 to-zinc-300">
 
       {/* NAVBAR */}
-      <nav className="bg-black/95 backdrop-blur-md text-white p-6 flex justify-between items-center shadow-xl sticky top-0 z-50">
+<nav className="bg-black/95 backdrop-blur-md text-white p-6 flex items-center justify-between"></nav>
+ <div className="flex items-center gap-3">
+  <img
+    src={logo}
+    alt="Micucci Store"
+    className="h-12 object-contain hover:scale-105 transition duration-300"
+  />
+</div>
+  <img
+    src={logo}
+    alt="Micucci Store"
+    className="h-12 object-contain hover:scale-105 transition duration-300"
+  />
+</div>
 
-        <h1 className="text-3xl font-extrabold tracking-[4px]">
-          MicucciStore
-        </h1>
 
         <div className="flex gap-6 items-center text-sm md:text-base">
 
